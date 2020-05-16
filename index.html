@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>PWA Template</title>
+  <!-- First create your web app manifest manifest.webmanifest in root. source: https://web.dev/add-manifest/  -->
+  <!-- Include icons for every device you want, don't forget 192x192 and 512x512 icons for chrome, others are optional. 
+    source: https://medium.com/studiopolitica/please-take-care-of-your-favicons-41f26f0309ae -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <!-- Then register service worker inside main js file, in this case: main.js -->
+  <!-- Then add install, activate and fetch event listeners inside your service worker sw.js, this file MUST be in the root folder
+  source: https://developers.google.com/web/ilt/pwa/introduction-to-service-worker
+  -->
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1> PWA ready</h1>
+  <script src="main.js"></script>
+</body>
+
+</html>
